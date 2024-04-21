@@ -1,0 +1,33 @@
+
+/* Контейнер галереї  */
+.gallery {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; 
+    justify-content: center; 
+    padding: 20px; 
+}
+
+/* Стилізація елементів галереї */
+.gallery-item {
+    list-style: none; 
+    
+    border-radius: 5px; 
+    overflow: hidden; 
+    flex-basis: 30%; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Тінь для надання об'єму */
+}
+
+
+/* Стилізація зображень галереї */
+.gallery-image {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    transition: transform 0.3s; 
+}
+
+/* Ефект при наведенні на зображення */
+.gallery-image:hover {
+    transform: scale(1.05); 
+}
